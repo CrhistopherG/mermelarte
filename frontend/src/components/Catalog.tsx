@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function Catalog() {
     const scrollTo = (id: string) => {
@@ -67,21 +68,25 @@ export default function Catalog() {
         </ul>
         </div>
       </section>
-      <section className="w-full px-6 py-8 text-center bg-amber-100">
-        <h2 className="text-2xl">Necesidades</h2>
-        <p>
-        Salud y Nutrición: Producto natural, sin conservantes ni aditivos, con alto contenido de fruta, fibra y antioxidantes.
+      <section className="w-full px-6 text-center bg-amber-100">
+        <h2 className="text-2xl bg-amber-400 text-white rounded-xl uppercase mx-20 my-6 italic font-semibold">Beneficios</h2>
+        <p className=" text-justify p-4 bg-gray-100 drop-shadow-2xl rounded-2xl mb-3">
+        ✅Salud y Nutrición: Producto natural, sin conservantes ni aditivos, con alto contenido de fruta, fibra y antioxidantes.
         </p>
-        <p>
-        Variedad y Sabor: Sabores únicos con frutas locales como mamey, pitahaya y nance, ofreciendo una alternativa diferente a las mermeladas comerciales.
+        <p className=" text-justify p-4 bg-gray-100 drop-shadow-2xl rounded-2xl mb-3">
+        ✅Variedad y Sabor: Sabores únicos con frutas locales como mamey, pitahaya y nance, ofreciendo una alternativa diferente a las mermeladas comerciales.
         </p>
-        <p>
-        Economía Local: Apoya a productores regionales, genera empleo y fomenta el comercio justo.
+        <p className=" text-justify p-4 bg-gray-100 drop-shadow-2xl rounded-2xl mb-3">
+        ✅Economía Local: Apoya a productores regionales, genera empleo y fomenta el comercio justo.
         </p>
-        <p>
-        Sostenibilidad: Uso de envases reutilizables, menor huella de carbono y aprovechamiento de excedentes agrícolas.
+        <p className=" text-justify p-4 bg-gray-100 drop-shadow-2xl rounded-2xl mb-3">
+        ✅Sostenibilidad: Uso de envases reutilizables, menor huella de carbono y aprovechamiento de excedentes agrícolas.
         </p>
 
+      </section>
+
+      <section className=" pt-9 pb-5">
+        <Link to="/menu" onClick={() => window.scrollTo(0,0)} className=" shadow-2xl rounded-2xl p-5 border-2 border-red-900 text-white font-bold uppercase bg-red-400">Realizar pedido</Link>
       </section>
 
       {/* Footer */}

@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-amber-900 mb-4">
             Conoce nuestras deliciosas mermeladas artesanales
           </h2>
-          <Link to="/catalog" onClick={() => window.scrollTo(0,0)} className="bg-amber-400 border-4 border-amber-700 hover:bg-amber-500 text-white font-bold py-2 px-6 rounded-xl mb-2">
+          <Link to="/catalogo" onClick={() => window.scrollTo(0,0)} className="bg-amber-400 border-4 border-amber-700 hover:bg-amber-500 text-white font-bold py-2 px-6 rounded-xl mb-2">
             EXPLORAR AHORA
           </Link>
         </section>
