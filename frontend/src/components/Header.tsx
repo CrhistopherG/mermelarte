@@ -12,9 +12,9 @@ export default function Header() {
           <nav className="content-center items-end w-full">
             <ul className="flex flex-row justify-around sm:space-x-4 mx-2">
               <Link  to="/" className="font-bold hover:bg-orange-400 text-xs rounded-xl uppercase">Inicio</Link>
-              <li className="font-bold text-xs rounded-xl uppercase">Realizar pedido</li>
+              <Link  to="/menu" className="font-bold hover:bg-orange-400 text-xs rounded-xl uppercase">Realizar Pedido</Link>
               <Link to="/presentacion" className="font-bold text-xs rounded-xl uppercase">Conócenos</Link>
-              <li className="font-bold text-xs rounded-xl uppercase">Contacto</li>
+              <Link to="/contacto" className="font-bold text-xs rounded-xl uppercase">Contacto</Link>
             </ul>
           </nav>
         </div>
