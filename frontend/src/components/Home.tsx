@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -44,9 +45,7 @@ export default function Home() {
 
       </main> 
 
-      <footer className="w-full p-6 flex justify-center border-t-2">
-        <p className="text-gray-600">© 2025 Mermelarte Ancestral</p>
-      </footer>
+      <Footer />
     </>
   )
 }
