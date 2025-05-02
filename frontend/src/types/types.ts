@@ -12,3 +12,9 @@ export interface Product {
     address: string;
     quantity: number;
   }
+
+  export interface Member {
+    name: string,
+    career: string,
+    image: string
+  }
