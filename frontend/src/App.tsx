@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="h-full">
+      
         <Header />
         <div>
           <Routes>
@@ -26,8 +26,6 @@ function App() {
               <Route path="pedido" element={<Order />} />
           </Routes>
         </div>
-        
-      </div>
     </>
   )
 }
