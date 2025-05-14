@@ -12,30 +12,36 @@ export default function Presentation() {
 
   const members: Member[] = [
     {
-      name: "Nombre 1",
-      career: "Sistemas",
-      image: "/miembro1.png"
+      name: "Estefany Guadalupe Herrera Arzapalo",
+      career: "Ing. en Gestión Empresarial",
+      image: "/miembro1.jpeg"
     },
     {
-      name: "Nombre 2",
-      career: "Sistemas",
-      image: "/miembro1.png"
+      name: "Paola Alejandra Contreras Escalante",
+      career: "Ing. en Gestión Empresarial",
+      image: "/miembro2.jpeg"
     },
     {
-      name: "Nombre 3",
-      career: "Sistemas",
-      image: "/miembro1.png"
+      name: "Elsi Galilea Loria Herrera",
+      career: "Ing. en Gestión Empresarial",
+      image: "/miembro3.jpeg"
     },
     {
-      name: "Nombre 4",
-      career: "Sistemas",
-      image: "/miembro1.png"
+      name: "Shania Dharyna Ku Canche",
+      career: "Ing. en Gestión Empresarial",
+      image: "/miembro4.jpeg"
     },
     {
-      name: "Nombre 5",
-      career: "Sistemas",
-      image: "/miembro1.png"
-    },
+      name: "Juan Pablo Pérez Martín",
+      career: "Ing. en Sistemas Computacionales",
+      image: "/miembro5.jpeg"
+    }
+    ,
+    {
+      name: "Crhistopher Isai Ramírez Gutiérrez",
+      career: "Ing. en Sistemas Computacionales",
+      image: "/miembro6.jpeg"
+    }
 
   ]
 
