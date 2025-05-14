@@ -2,12 +2,12 @@
 import { Routes, Route } from "react-router-dom"
 import Presentation from "./components/Presentation"
 import Header from "./components/Header"
-import About from "./components/About"
 import Layout from "./components/Layout"
 import Home from "./components/Home"
 import Catalog from "./components/Catalog"
 import Order from "./components/Order"
 import Menu from "./components/Menu"
+import Contact from "./components/Contact"
 function App() {
 
 
@@ -21,9 +21,9 @@ function App() {
               <Route index element={<Home />} />
               <Route path="presentacion" element={<Presentation />} />
               <Route path="catalogo" element={<Catalog />} />
-              <Route path="about" element={<About />} />
               <Route path="menu" element={<Menu />} />
               <Route path="pedido" element={<Order />} />
+              <Route path="contacto" element={<Contact/>} />
           </Routes>
         </div>
         
