@@ -1,10 +1,10 @@
-import { FaMapPin, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { FaMapPin, FaWhatsapp } from "react-icons/fa";
 import Footer from "./Footer";
 import { MdEmail } from "react-icons/md";
 import { useCallback } from "react";
 
 export default function Contact() {
-  const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = useCallback(() => {
     alert("Mensaje enviado");
   }, []);
 

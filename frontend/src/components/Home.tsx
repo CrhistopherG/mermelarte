@@ -7,7 +7,7 @@ export default function Home() {
       {/* Main transparente deja ver la textura del layout */}
       <main className="flex flex-col items-center p-6 bg-transparent">
         {/* Sección principal con cita */}
-        <section className="flex flex-col sm:flex-row items-center justify-evenly bg-[url(/hoja.jpg)] sm:w-full md:w-4/5 lg:w-3/4 p-6 mt-4 rounded-3xl drop-shadow-lg bg-no-repeat bg-center">
+        <section className="flex flex-col sm:flex-row items-center justify-evenly bg-[url(/hoja.jpg)] bg-cover bg-no-repeat	 sm:w-full md:w-4/5 lg:w-3/4 p-6 mt-4 rounded-3xl drop-shadow-lg">
           <div className="flex flex-col items-center sm:items-start mb-4 sm:mb-0">
             <h2 className="font-bold text-2xl sm:text-5xl pb-2 text-center sm:text-left text-amber-900 uppercase">
               Mermelarte Ancestral
@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* Botón para explorar el catálogo */}
         <section className="flex flex-col md:flex-row items-center text-center p-6 bg-[url(/hoja.jpg)] bg-opacity-90 mx-4 border border-rose-200 drop-shadow-md rounded-3xl my-5 w-full max-w-2xl">
-          <div className="flex flex-col md:flex-row items-center justify-between w-full">
+          <div className="flex flex-col md:flex-col md:gap-3 items-center justify-between w-full">
             <h2 className="text-2xl sm:text-3xl font-bold text-amber-900 mb-4 md:mb-0">
               Conoce nuestras deliciosas mermeladas artesanales
             </h2>
