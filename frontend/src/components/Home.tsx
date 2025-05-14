@@ -36,7 +36,7 @@ export default function Home() {
               <img
                 src="/mermelada-frasco-tamarindo.jpeg"
                 alt="Mermelada tamarindo"
-                className="w-2/3 rounded-4xl mb-4 drop-shadow-xl object-cover"
+                className="w-2/3 rounded-4xl mb-2 mt-8 drop-shadow-xl object-cover"
               />
             </div>
             {/* Card 2 */}
@@ -63,7 +63,7 @@ export default function Home() {
               <img
                 src="/mermeladas.jpeg"
                 alt="Mermeladas varias"
-                className="w-2/3 rounded-4xl mb-4 drop-shadow-xl object-cover"
+                className="w-2/3 rounded-4xl h-40 mt-10 drop-shadow-xl object-cover"
               />
             </div>
           </div>
