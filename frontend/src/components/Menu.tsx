@@ -6,28 +6,28 @@ const products: Product[] = [
   {
     id: 1,
     name: "Mermelada de papaya",
-    image: "/mermelarte-papaya.png",
+    image: "/mermelada-frasco-papaya-250gr.jpeg",
     size: "250gr",
     price: "$30-$45 MXN"
   },
   {
     id: 2,
     name: "Mermelada de papaya",
-    image: "/mermelarte-papaya.png",
+    image: "/mermelada-frasco-papaya-250gr.jpeg",
     size: "430gr",
     price: "$45-$60 MXN"
   },
   {
     id: 3,
     name: "Mermelada de tamarindo y chipotle",
-    image: "/mermelarte-tamarindo.png",
+    image: "/mermelada-frasco-tamarindo-250gr.jpeg",
     size: "250gr",
     price: "$45-$60 MXN"
   },
   {
     id: 4,
     name: "Mermelada de tamarindo y chipotle",
-    image: "/mermelarte-tamarindo.png",
+    image: "/mermelada-frasco-tamarindo-250gr.jpeg",
     size: "430gr",
     price: "$80-$110 MXN"
   }
@@ -44,14 +44,14 @@ export default function Menu() {
           {products.map((product) => (
             <section 
               key={product.id} 
-              className="flex p-5 justify-center items-center w-200 sm:w-xl h-70 bg-amber-100 drop-shadow-lg mx-10 rounded-4xl border"
+              className="flex p-5 justify-around items-center w-200 sm:w-xl h-70 bg-amber-100 drop-shadow-lg mx-10 rounded-4xl border"
             >
               <img 
                 src={product.image} 
                 alt={product.name} 
-                className="w-20 sm:w-40 h-20 sm:h-40"
+                className="w-30 sm:w-40 h-30 sm:h-40 rounded-4xl"
               />
-              <div className="px-3 text-center text-sm sm:text-sm flex flex-col">
+              <div className="px-1 text-center text-sm sm:text-sm flex flex-col">
                 <h2 className={`text-lg uppercase font-light ${product.name == "Mermelada de papaya" && "text-nowrap"}`}>{product.name}</h2>
                 <p>Cantidad: {product.size}</p>
                 <p>Precio: {product.price}</p>
