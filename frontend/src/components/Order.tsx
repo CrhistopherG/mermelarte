@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
 import { Product, OrderFormData } from "../types/types";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
@@ -9,6 +9,11 @@ interface LocationState {
 }
 
 export default function Order() {
+
+  const handleConfirm = useCallback(() => {
+      alert("Mensaje enviado");
+    }, []);
+
   const location = useLocation();
   const state = location.state as LocationState;
   
@@ -23,13 +28,18 @@ export default function Order() {
     return <div className="p-4 text-red-500">No se ha seleccionado ningún producto</div>;
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log({
-      product: state.product,
-      customerInfo: formData
-    });
-  };
+
+  const navigate = useNavigate();
+  
+  const handleSubmit = useCallback(
+    (e: React.FormEvent<HTMLFormElement>) => {
+      // Aquí puedes enviar los datos a tu API o procesarlos
+      console.log({ product: state.product, customerInfo: formData });
+      alert(`Pedido confirmado para ${formData.name}!`);
+      navigate("/menu");
+    },
+    [formData, state.product]
+  );
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -114,6 +124,7 @@ export default function Order() {
 
             <button
               type="submit"
+              onSubmit={handleConfirm}
               className="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600"
             >
               Confirmar Pedido
