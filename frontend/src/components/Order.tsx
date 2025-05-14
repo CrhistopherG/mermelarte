@@ -30,9 +30,9 @@ export default function Order() {
 
 
   const navigate = useNavigate();
-  
+
   const handleSubmit = useCallback(
-    (e: React.FormEvent<HTMLFormElement>) => {
+    () => {
       // Aquí puedes enviar los datos a tu API o procesarlos
       console.log({ product: state.product, customerInfo: formData });
       alert(`Pedido confirmado para ${formData.name}!`);
