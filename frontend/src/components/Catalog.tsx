@@ -83,7 +83,7 @@ export default function Catalog() {
 
         {/* Papaya Info */}
         <div
-          className="w-full flex justify-evenly px-4 mt-8 "
+          className="w-full flex flex-col md:flex-row gap-5 md:gap-0 justify-evenly px-4 mt-8 "
         >
           <div id="papaya-info" className=" flex flex-col max-w-3xl bg-slate-600 rounded-4xl p-6 text-white">
             <h3 className="text-2xl font-bold mb-4 text-center">Papaya</h3>
